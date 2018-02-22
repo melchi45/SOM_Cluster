@@ -1,0 +1,253 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SOM_Cluster.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SOM_Cluster.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SOM_Cluster"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SOM_Cluster Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SOM_CLUSTER_DIALOG DIALOGEX 0, 0, 355, 313
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SOM_Cluster"
+FONT 9, "µ¸¿òÃ¼", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_INPUT_FILE,55,215,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NETWORK_FILE,55,234,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTPUT_FILE,55,253,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPUT_NODE,215,196,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTPUT_NODE,215,215,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAYER_X,302,196,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAYER_Y,303,215,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_LEARNING_RATE,215,234,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END_LEARNING_RATE,215,253,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_NEIGH,79,272,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_DECREMENT_ITERATION,215,272,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_END_ITERATION,303,272,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_VIEW_INTERVAL,303,234,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_SAVE_INTERVAL,303,253,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NOW_ITERATION,57,173,46,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,243,291,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,298,291,50,14
+    CONTROL         "",IDC_STATIC_TRAINING,"Static",SS_BLACKFRAME,7,7,164,154
+    LTEXT           "input:",IDC_STATIC,28,218,24,8
+    LTEXT           "Net:",IDC_STATIC,37,237,15,8
+    LTEXT           "output:",IDC_STATIC,26,256,26,8
+    LTEXT           "Input Num.:",IDC_STATIC,168,200,45,8
+    GROUPBOX        "Execute Options",IDC_STATIC,7,163,341,127
+    LTEXT           "Output Num.:",IDC_STATIC,165,217,49,8
+    LTEXT           "Start Learning Rate:",IDC_STATIC,132,235,82,8
+    LTEXT           "Layer X :",IDC_STATIC,264,199,36,8
+    LTEXT           "Layer Y :",IDC_STATIC,264,218,36,8
+    LTEXT           "End Learning Rate:",IDC_STATIC,140,255,72,8
+    LTEXT           "Neiborhood:",IDC_STATIC,32,275,44,8
+    LTEXT           "Decre Iter.:",IDC_STATIC,164,275,49,8
+    LTEXT           "End Iter.:",IDC_STATIC,261,275,41,8
+    CONTROL         "",IDC_STATIC_RUN,"Static",SS_BLACKFRAME,185,7,163,154
+    LTEXT           "Interval :",IDC_STATIC,261,236,40,8
+    LTEXT           "Save Iter.:",IDC_STATIC,257,254,44,8
+    PUSHBUTTON      "Traning",IDC_BUTTON_RUN,62,291,50,14
+    LTEXT           "Iteration :",IDC_STATIC,10,176,45,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,109,191,239,1
+    EDITTEXT        IDC_EDIT_NOW_LEARNING_RATE,192,173,40,14,ES_AUTOHSCROLL
+    LTEXT           "Cur. Learning Rate :",IDC_STATIC,108,176,81,8
+    LTEXT           "Cur. Neiborhood:",IDC_STATIC,238,176,65,8
+    EDITTEXT        IDC_EDIT_NEIGHBORHOOD,305,173,40,14,ES_AUTOHSCROLL
+    CONTROL         "Pause",IDC_CHECK_PAUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,199,32,10
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,118,291,50,14
+    CONTROL         "Training",IDC_RADIO_TRAINING,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,199,48,10
+    CONTROL         "Test",IDC_RADIO_RUN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,67,199,32,10
+    GROUPBOX        "Static",IDC_STATIC,7,187,102,24,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "SOM_Cluster MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SOM_Cluster"
+            VALUE "LegalCopyright", "Copyright (C) 2000"
+            VALUE "OriginalFilename", "SOM_Cluster.EXE"
+            VALUE "ProductName", "SOM_Cluster Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SOM_CLUSTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SOM_CLUSTER_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About SOM_Cluster..."
+END
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SOM_Cluster.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
